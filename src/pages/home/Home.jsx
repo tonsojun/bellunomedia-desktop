@@ -1,5 +1,3 @@
 export default function Home() {
-  return (
-    <h1>hello from home</h1>
-  )
+  <h1>hellO from home</h1>
 }
