@@ -1,9 +1,17 @@
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+} */
+
 .wrapper {
   position: relative;
   overflow: hidden;
-  width: 1200px;
+  width: 1120px;
   height: 900px; 
   background: #0B0B22; /* remove this line when animation code below is un-commented*/
+  z-index: -1;
 }
 
 /* #slide {
@@ -16,6 +24,7 @@
   -webkit-animation-delay: 2s;
   animation: slide 1s forwards;
   animation-delay: 2s;
+  z-index: -1;
 }
 
 @-webkit-keyframes slide {
@@ -26,13 +35,33 @@
   100% { left: 0; }
 } */
 
-p {
-  color: white;
-}
 
 button {
   border-radius: 0 !important;
+  margin-left: 130px;
+  margin-top: 30px;
+  width: 300px;
 }
-i {
+#showreel-button {
+  padding-right: 110px;
+}
+
+.main-title{
+  font-family: "Crimson-text";
+  font-size: 38px;
+  margin: 2px;
+  padding-left: 85px;
+  margin-top: 60px;
   color: white;
+}
+
+.main-body {
+  font-family: "Arial";
+  color: white;
+  padding-left: 185px;
+  padding-top: 10px;
+}
+
+img {
+  float: right;
 }
